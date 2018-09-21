@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Formulaire</title>
+
+    <style>
+        html{
+            font-family: 'poppins', cursive;
+            font-size: 140%
+        }
+        body{
+            background: #2d3436;
+            color: #2d3436;
+            margin-top: 50px;
+            background-color: #2d3436;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        form{
+            width:30%;
+            margin:auto;
+            background:#dfe6e9;
+            border: none;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        form p{font-size: 0.6em; }
+        form label{width: 150px; display:block; float:left; line-height: 3em;}
+        form input{height: 30px;}
+        form button{
+            border: 0; background: #2d3436; color: #fff
+        }
+        form input, form button, form textarea, form select{
+            font-family: 'poppins', cursive; width: 55%; border: 2px solid #b2bec3; padding: 5px; 
+        }
+        form input[type="radio"]{
+            width: auto; 
+            height: auto;
+        }
+        form button{
+            width: 100%;
+            height: 50px;
+            font-size: 0.8em;
+            border: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <form action="#" method="post">
+            <legend>Créez votre compte</legend>
+            <hr />
+            
+            <p>
+                <label for="name">Nom</label>
+                <input type="text" name="name" placeholder="Votre nom" id="name"/>
+            </p>
+
+            <p>
+                    <label for="name">Email</label>
+                    <input type="email" name="email" placeholder="Votre email" id="email"/>
+                </p>
+
+            <p>
+                <label for="firstname">Prénom </label>
+                <input type="text" name="firstname" placeholder="Votre prénom" id="firstname"/>
+            </p>  
+            
+            <p>
+                <label for="pwd">Mot de passe</label>
+                <input type="password" name="pwd" placeholder="Choisissez un mot de passe" id="pwd"/>
+            </p>
+
+            <p>
+                <label for="pwd">Confirmation</label>
+                <input type="password2" name="pwd2" placeholder="Confirmation du mot de passe" id="pwd2"/>
+            </p>
+
+            <p>
+                <label for="sex">Sexe</label>
+                <input type="radio" name="male" id="sex"/> Homme
+                <input type="radio" name="male" id="sex"/> Femme
+            </p>
+
+            <p>
+                <label for="fruit">Fruit préféré ?</label>
+                <select name="fruit" id="fruit">
+                    <option value="">-- Votre fruit préféré --</option>
+                    <option value="apple">Pomme</option>
+                    <option value="fraise">Fraise</option>
+                    <option value="peer">Poire</option>
+                </select>
+            </p>
+
+            <button name="submit">Envoyer mon formulaire</button>
+    </form>
+    
+</body>
+</html>

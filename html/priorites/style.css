@@ -1,0 +1,32 @@
+body{
+    font-family: 'Coiny', cursive; font-size: 1.2em; text-align: center;
+    color: #225574;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+.container{
+    width: 500px;
+    margin:auto;
+}    
+
+h1{
+    margin: 50px 0 0 0;
+    font-size: 3em;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.7), -1px -1px #000;
+}
+p{
+    text-align:justify;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300
+}
+section:last-child p{
+    margin-left: 40px;
+}
+section{
+    background:#3b787b;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    color:#fff
+
+}
